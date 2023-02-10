@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=PT Sans Caption" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Alumni Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Marck Script" rel="stylesheet" type="text/css">
     <title>GruppaKino</title>
 </head>
 <body>
@@ -12,9 +14,8 @@
     <div class="wrapper">
         <header class="header">
             <div class="header_container">
-
                 <div class="hamburger_menu">
-                    <input id="menu_toggle" type="checkbox"/>
+                    <input id="menu_toggle" type="checkbox">
                     <label class="menu_btn" for="menu_toggle">
                         <span></span>
                     </label>
@@ -28,7 +29,7 @@
                     </ul>
                 </div>
 
-                <a href="/" class="logo header_logo">Группа «КИНО»</a>
+                <a href="/" class="logo page_logo">Группа «КИНО»</a>
 
                 <nav class="nav_menu">
                     <ul class="nav_list">
@@ -39,25 +40,402 @@
                         <li><a class="nav__menu_item" href="#">Галерея</a></li>
                     </ul>
                 </nav>
-
-                <a href="#" class="header_basket">
-                    <span class="header_basket__icon">
-                        <img width="22" src="img/icons/iconBasket.png" alt="Корзина" title="Корзина">
-                    </span>
-                </a>
             </div>
         </header>
 
         <div class="main">
-                <div class="front_side">
-                    <img class="imgCoi" src="img/gallery/background.png" alt="фон" title="Цой">
+            <div class="front_side">
+                <img class="imgTsoi" src="img/gallery/BGfront2.jpg" alt="фон" title="Цой">
+            </div>
+
+            <div class="front_container">
+                <b class="sub_title">Следи за собой, будь осторожен!</b>
+
+                <div class="front_action">
+                    <button class="front_button" type="button">Купить билеты</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper_content">
+            <div class="content_area">
+                <div class="content-container">
+                    <section class="section_poster">
+                        <h2 class="title_poster">Афиша</h2>
+                            <div class="event_container">
+                                <a href="/" class="event">
+                                    <div class="event_date">
+                                        <div class="event_date__month">10 Февраль</div>
+                                            <div class="event_date__time">
+                                                <span>19:00</span>
+                                                <span class="slash">/</span>
+                                                <span>12+</span>
+                                            </div>
+                                        </div>
+                                    <div class="event_city">Казань</div>
+                                    <div class="event_place">
+                                        <span class="place_location">Татнефть-Арена</span>
+                                    </div>
+                                    <div class="ticket_button">
+                                        <button type="button">Купить билеты</button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="event_container">
+                                <a href="/" class="event">
+                                    <div class="event_date">
+                                        <div class="event_date__month">12 Февраль</div>
+                                        <div class="event_date__time">
+                                            <span>19:00</span>
+                                            <span class="slash">/</span>
+                                            <span>12+</span>
+                                        </div>
+                                    </div>
+                                    <div class="event_city">Нижний Новгород</div>
+                                    <div class="event_place">
+                                        <span class="place_location">КРК «Нагорный»</span>
+                                    </div>
+                                    <div class="ticket_button">
+                                        <button type="button">Купить билеты</button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="event_container">
+                                <a href="/" class="event">
+                                    <div class="event_date">
+                                        <div class="event_date__month">14 Февраль</div>
+                                        <div class="event_date__time">
+                                            <span>19:00</span>
+                                            <span class="slash">/</span>
+                                            <span>12+</span>
+                                        </div>
+                                    </div>
+                                    <div class="event_city">Уфа</div>
+                                    <div class="event_place">
+                                        <span class="place_location">Уфа-Арена</span>
+                                    </div>
+                                    <div class="ticket_button">
+                                        <button type="button">Купить билеты</button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="event_container">
+                                <a href="/" class="event">
+                                    <div class="event_date">
+                                        <div class="event_date__month">15 Апрель</div>
+                                        <div class="event_date__time">
+                                            <span>19:00</span>
+                                            <span class="slash">/</span>
+                                            <span>12+</span>
+                                        </div>
+                                    </div>
+                                    <div class="event_city">Южно-сахалинск</div>
+                                    <div class="event_place">
+                                        <span class="place_location">Дворец спорта «Кристалл» (Южно-сахалинск)</span>
+                                    </div>
+                                    <div class="ticket_button">
+                                        <button type="button">Купить билеты</button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="event_container">
+                                <a href="/" class="event">
+                                    <div class="event_date">
+                                        <div class="event_date__month">18 Апрель</div>
+                                        <div class="event_date__time">
+                                            <span>19:00</span>
+                                            <span class="slash">/</span>
+                                            <span>12+</span>
+                                        </div>
+                                    </div>
+                                    <div class="event_city">Владивосток</div>
+                                    <div class="event_place">
+                                        <span class="place_location">Фетисов-Арена</span>
+                                    </div>
+                                    <div class="ticket_button">
+                                        <button type="button">Купить билеты</button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="event_container">
+                                <a href="/" class="event">
+                                    <div class="event_date">
+                                        <div class="event_date__month">20 Апрель</div>
+                                        <div class="event_date__time">
+                                            <span>19:00</span>
+                                            <span class="slash">/</span>
+                                            <span>12+</span>
+                                        </div>
+                                    </div>
+                                    <div class="event_city">Хабаровск</div>
+                                    <div class="event_place">
+                                        <span class="place_location">Ерофей-Арена</span>
+                                    </div>
+                                    <div class="ticket_button">
+                                        <button type="button">Купить билеты</button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="event_container">
+                                <a href="/" class="event">
+                                    <div class="event_date">
+                                        <div class="event_date__month">22 Апрель</div>
+                                        <div class="event_date__time">
+                                            <span>19:00</span>
+                                            <span class="slash">/</span>
+                                            <span>12+</span>
+                                        </div>
+                                    </div>
+                                    <div class="event_city">Иркутск</div>
+                                    <div class="event_place">
+                                        <span class="place_location">Ледовый дворец «Айсберг» (Иркутск)</span>
+                                    </div>
+                                    <div class="ticket_button">
+                                        <button type="button">Купить билеты</button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="event_container">
+                                <a href="/" class="event">
+                                    <div class="event_date">
+                                        <div class="event_date__month">25 Апрель</div>
+                                        <div class="event_date__time">
+                                            <span>19:00</span>
+                                            <span class="slash">/</span>
+                                            <span>12+</span>
+                                        </div>
+                                    </div>
+                                    <div class="event_city">Красноярск</div>
+                                    <div class="event_place">
+                                        <span class="place_location">Платинум Арена (Красноярск)</span>
+                                    </div>
+                                    <div class="ticket_button">
+                                        <button type="button">Купить билеты</button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="event_container">
+                                <a href="/" class="event">
+                                    <div class="event_date">
+                                        <div class="event_date__month">29 Апрель</div>
+                                        <div class="event_date__time">
+                                            <span>19:00</span>
+                                            <span class="slash">/</span>
+                                            <span>12+</span>
+                                        </div>
+                                    </div>
+                                    <div class="event_city">Барнаул</div>
+                                    <div class="event_place">
+                                        <span class="place_location">Титов-Арена</span>
+                                    </div>
+                                    <div class="ticket_button">
+                                        <button type="button">Купить билеты</button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="event_container">
+                                <a href="/" class="event">
+                                    <div class="event_date">
+                                        <div class="event_date__month">01 Май</div>
+                                        <div class="event_date__time">
+                                            <span>19:00</span>
+                                            <span class="slash">/</span>
+                                            <span>12+</span>
+                                        </div>
+                                    </div>
+                                    <div class="event_city">Томск</div>
+                                    <div class="event_place">
+                                        <span class="place_location">Дворец зрелищ и спорта</span>
+                                    </div>
+                                    <div class="ticket_button">
+                                        <button type="button">Купить билеты</button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="event_container">
+                                <a href="/" class="event">
+                                    <div class="event_date">
+                                        <div class="event_date__month">03 Май</div>
+                                        <div class="event_date__time">
+                                            <span>19:00</span>
+                                            <span class="slash">/</span>
+                                            <span>12+</span>
+                                        </div>
+                                    </div>
+                                    <div class="event_city">Новосибирск</div>
+                                    <div class="event_place">
+                                        <span class="place_location">МВК «Новосибирск-Экспоцентр»</span>
+                                    </div>
+                                    <div class="ticket_button">
+                                        <button type="button">Купить билеты</button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="event_container">
+                                <a href="/" class="event">
+                                    <div class="event_date">
+                                        <div class="event_date__month">05 Май</div>
+                                        <div class="event_date__time">
+                                            <span>19:00</span>
+                                            <span class="slash">/</span>
+                                            <span>12+</span>
+                                        </div>
+                                    </div>
+                                    <div class="event_city">Омск</div>
+                                    <div class="event_place">
+                                        <span class="place_location">G-Drive Арена</span>
+                                    </div>
+                                    <div class="ticket_button">
+                                        <button type="button">Купить билеты</button>
+                                    </div>
+                                </a>
+                            </div>
+
+                        <a class="button__all_events" href="/">Посмотреть все</a>
+                    </section>
+
+                    <section class="section_news">
+                        <div class="header_news">
+                            <h2>Новости</h2>
+                        </div>
+                        <div class="container_news">
+                            <div class="content_news">
+                                <a href="/" class="news_card">
+                                    <p class="news_card__date">05 февраля 2023</p>
+                                    <h3 class="news_title">Группа «Кино» впервые за 30 лет даст концерт в Нижнем Новгороде</h3>
+                                    <p class="news_card__text">Концерт под руководством сына легендарного Виктора Цоя состоится в феврале 2023 года.</p>
+                                </a>
+                            </div>
+
+                            <div class="content_news">
+                                <a href="/" class="news_card">
+                                    <p class="news_card__date">10 Январь 2023</p>
+                                    <h3 class="news_title">В Казани состоится концерт группы «Кино»</h3>
+                                    <p class="news_card__text">Казанская «Татнефть-Арена» приглашает на концерт легендарной группы «Кино».</p>
+                                </a>
+                            </div>
+
+                            <div class="content_news">
+                                <a href="/" class="news_card">
+                                    <p class="news_card__date">29 Январь 2023</p>
+                                    <h3 class="news_title">Большой концерт группы «Кино» в Казани</h3>
+                                    <p class="news_card__text">Концерт под руководством сына легендарного Виктора Цоя состоится в феврале 2023 года.</p>
+                                </a>
+                            </div>
+
+                            <div class="content_news">
+                                <a href="/" class="news_card">
+                                    <p class="news_card__date">26 Декабрь 2022</p>
+                                    <h3 class="news_title">В Саратов с концертом едет легендарная группа «Кино»</h3>
+                                    <p class="news_card__text">Рок-группа «Кино» приедет с концертом в Саратов: музыканты посвятят выступление 60-летию Цоя.</p>
+                                </a>
+                            </div>
+
+                            <div class="content_news">
+                                <a href="/" class="news_card">
+                                    <p class="news_card__date">23 Январь 2023</p>
+                                    <h3 class="news_title">В Тольятти состоится концерт легендарной группы «Кино»</h3>
+                                    <p class="news_card__text">8 февраля 2023 года группа «Кино» сыграет большой концерт в честь шестидесятилетия Виктора Цоя.</p>
+                                </a>
+                            </div>
+
+                            <div class="content_news">
+                                <a href="/" class="news_card">
+                                    <p class="news_card__date">14 Декабрь 2022</p>
+                                    <h3 class="news_title">Презентация нового альбома «Кино» в Москве</h3>
+                                    <p class="news_card__text">22 декабря в ДК Горбунова группа сыграет свои песни и представит новую пластинку.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a class="button__all_events" href="/">Посмотреть все</a>
+                    </section>
+
+                    <section class="about_tickets">
+                        <div class="tickets_title">
+                            <h2>Билеты на концерты группы «Кино»</h2>
+                        </div>
+
+                        <div class="text_tickets">
+                            <p>Основанная в 1982 году группа “Кино” была одним из самых популярных музыкальных коллективов страны. Лидера группы Виктора Цоя уже давно нет в живых, но его песни продолжают радовать ценителей русского рока. В наше время кумиры советской молодежи имеют много поклонников. Спустя 30 лет после распада, коллектив воссоединяется и готовят тур по городам России и ближнего зарубежья.
+                            <strong>Купить официальные билеты на концерты группы “Кино”можно на нашем сайте gruppa-kino.com.</strong>
+                            </p>
+                            <p>Долгожданные концерты музыкантов пройдут в Москве, Санкт-Петербурге, Казани, Нижнем Новгороде, Тольятти, Новосибирске, Челябинске, Саратове и других городах! У поклонников культовой рок-группы будет возможность еще раз насладиться любимыми композициями. Тур группы “Кино” в 2023 году подарит массу приятных сюрпризов фанатам: шанс увидеть кумиров в своем родном городе, живое выступление рок-музыкантов, интересный видеоряд. На сцену выйдут Юрий Каспарян, Александр Титов, Игорь Тихомиров. Гости мероприятия услышат голос самого Виктора Цоя, увидят редкие кадры из его жизни. Билеты на концерты группы “Кино” в городах России уже доступны на нашем сайте gruppa-kino.com! Станьте свидетелем воссоединения самых знаменитых рокеров Советского Союза!</p>
+                            <p>Виктор Цой и группа “Кино” – это целая музыкальная эпоха. Их песни знают и любят наши современники, хотя коллектив перестал существовать тридцать лет назад. Раньше концерты группы “Кино” проходили при полном аншлаге. Сейчас публика проявляет не меньший интерес к творчеству рок-музыкантов. Несколько поколений меломанов слышали легендарные песни только в записи, представьте какой восторг испытают ценители русского рока на живом выступлении кумиров! Торопитесь купить билеты на концерты “Кино” с Цоем на вокале, записи его голоса звучат так, будто легенда жив!</p>
+                            <p>Невероятное шоу, созданное при участии сына Виктора Цоя и музыкантов из группы “Кино”, принесет массу впечатлений зрителям. Современные технологии, творческая энергия и талант создателей проекта позволили вновь вернуться в прошлое и побывать на концерте группы “Кино”, прикоснуться к их творчеству. Такое пропускать нельзя!</p>
+                            <h3>Как купить билеты на концерты группы “Кино”?</h3>
+                            <p>Билеты можно купить на нашем сайте gruppa-kino.com. Онлайн-покупка займет несколько минут, избавит от очередей и ожиданий. Выбираете мероприятие, места на схеме зрительного зала и оформляете заказ. Для безналичной оплаты потребуется ввести платежные данные банковской карты и адрес электронной почты, куда придут билеты после проведения платежа. Операция проходит на странице банка, поэтому абсолютно безопасна. Есть вариант оплаты наличными. Для этого необходимо оформить доставку билетов на указанный адрес. Курьер привезет заказ в течении двух дней и примет деньги. Мы гарантируем стопроцентную подлинность электронных и бумажных билетов на концерты “Кино” в городах России.</p>
+                            <p>Не упустите уникальный шанс вновь побывать на концерте любимой группы!</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer_content">
+                    <div class="footer_logo">
+                        <a href="/" class="logo page_logo">Группа «КИНО»</a>
+                    </div>
+                    <ul class="footer_menu">
+                        <li class="footer__menu_list">
+                            <a href="/" class="footer__menu_link">Афиша и Билеты</a>
+                        </li>
+                        <li class="footer__menu_list">
+                            <a href="/" class="footer__menu_link">Новости</a>
+                        </li>
+                        <li class="footer__menu_list">
+                            <a href="/" class="footer__menu_link">О группе</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer_menu">
+                        <li class="footer__menu_list">
+                            <a href="/" class="footer__menu_link">О нас</a>
+                        </li>
+                        <li class="footer__menu_list">
+                            <a href="/" class="footer__menu_link">Оплата и доставка</a>
+                        </li>
+                        <li class="footer__menu_list">
+                            <a href="/" class="footer__menu_link">Правила оказания услуг</a>
+                        </li>
+                        <li class="footer__menu_list">
+                            <a href="/" class="footer__menu_link">Политика конфиденциальности</a>
+                        </li>
+                        <li class="footer__menu_list">
+                            <a href="/" class="footer__menu_link">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer_menu">
+                        <li class="footer__menu_phone">
+                            <a href="/" class="footer__menu_link">+7 (499) 322 48 75</a>
+                        </li>
+                    </ul>
                 </div>
 
-        </div>
-        <footer class="footer"></footer>
+                    <div class="footer_border"></div>
+                    <p class="footer_down">
+                        <span>Консьерж-сервис.</span>
+                        <span>Не является официальным сайтом Группа Кино</span>
+                    </p>
+                    <p class="footer_down">
+                        <span>Продажа билетов. Все права защищены © 2023</span>
+                    </p>
+            </div>
+        </footer>
     </div>
-
 </body>
-
-
 </html>
