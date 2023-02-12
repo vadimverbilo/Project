@@ -61,7 +61,7 @@ html,
 body {
     font-family: PT Sans,sans-serif;
     font-size: 16px;
-    color: #000;
+    color: var(--content-color);
     height: 100%;
     line-height: 1;
 }
@@ -104,7 +104,7 @@ body {
     left: 0;
     right: 0;
     transition: .2s ease-in-out;
-    background: linear-gradient(180deg,rgba(0,0,0,.4),transparent);
+    background: linear-gradient(180deg,rgba(0,0,0,.8),transparent);
     color: #fff;
     z-index: 100;
     height: 105px;
@@ -118,9 +118,6 @@ body {
     max-width: 1215px;
     width: 100%;
     z-index: 2;
-}
-.header.no-index {
-    z-index: auto
 }
 #menu_toggle {
     opacity: 0;
@@ -142,7 +139,7 @@ body {
     margin: 0 20px 0 0;
     border: none;
     background: none;
-    cursor: default;
+    cursor: pointer;
     z-index: 1;
 }
 .menu_btn > span,
@@ -229,11 +226,17 @@ ul.menu_list:hover {
     max-width: 992px;
     position: relative;
     display: inline-block;
-    box-sizing: border-box;
     border: none;
     font-weight: 600;
     color: inherit;
     font-family: 'Alumni Sans', sans-serif;
+}
+@media (max-width: 992px) {
+    .logo {
+        padding: 5px 10px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
 }
 .page_logo:before {
     top: -7px;
@@ -265,8 +268,6 @@ ul.menu_list:hover {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 .nav__menu_item {
     padding: 12px 24px;
@@ -278,12 +279,11 @@ ul.menu_list:hover {
     transition: .2s ease-out;
     text-shadow: 0 0 8px rgb(0 0 0 / 5%), 1px 1px 1px rgb(0 0 0 / 16%);
 }
-@media (max-width: 1215px){
+@media (max-width: 992px) {
     .nav__menu_item {
-    }
-}
-@media (max-width: 768px){
-    .nav__menu_item {
+        padding: 5px 10px;
+        margin-right: 10px;
+        font-size: 16px;
     }
 }
 .nav__menu_item:hover {
@@ -294,7 +294,6 @@ ul.menu_list:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
-    flex-grow: 1;
 }
 .front_side {
     display: flex;
@@ -318,8 +317,6 @@ ul.menu_list:hover {
     }
 }
 .imgTsoi {
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -341,7 +338,7 @@ ul.menu_list:hover {
     width: 100%;
 }
 @media (max-width: 990px) {
-    .front_container {
+    .front_side {
         align-items: center;
     }
 }
@@ -349,8 +346,9 @@ ul.menu_list:hover {
     .front_container {
         width: 100vw;
         padding: 20px 24px;
-        }
+        align-items: center;
     }
+}
 .sub_title {
     font-family: 'Marck Script', sans-serif;
     text-shadow: 1px 1px 8px rgb(0 0 0 / 24%);
@@ -362,26 +360,24 @@ ul.menu_list:hover {
     color: #C2C2C2FF;
     display: block;
     text-align: center;
-    margin: 0 130px 320px;
+    margin: 0 130px 450px;
+    position: fixed;
+}
+@media (max-width: 992px) {
+    .sub_title {
+        padding: 6px 8px;
+        margin-right: 8px;
+        font-size: 16px;
+    }
 }
 .front_action {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 80px;
-}
-@media (max-width: 1530px) {
-    .front_button {
-        max-width: 100%;
-        width: auto;
-        height: auto;
-        font-size: 16px;
-        line-height: 1;
-    }
+    margin-bottom: -50px;
 }
 .front_button {
     width: 100%;
-    max-width: 280px;
     height: 72px;
     font-size: 20px;
     line-height: 24px;
@@ -389,14 +385,13 @@ ul.menu_list:hover {
 }
 button {
     position: relative;
-    box-sizing: border-box;
     display: inline-block;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: -.01em;
     text-align: center;
     color: #fff;
-    cursor: pointer;
+    cursor: default;
     padding: 14px 30px;
     font-size: 16px;
     border: 1px solid var(--primary);
@@ -404,16 +399,20 @@ button {
     background-color: var(--primary);
     border-radius: var(--twisting);
 }
-button.front_button:hover {
-    opacity: 0.8;
+@media (max-width: 1530px) {
+    .front_button {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        font-size: 16px;
+        line-height: 1;
+    }
 }
 .wrapper_content {
     position: relative;
-    flex-grow: 1;
     background-color: var(--bg-color);
 }
 .content_area {
-    box-sizing: border-box;
     position: relative;
     margin: 0 auto;
     padding: 0 40px;
@@ -441,11 +440,7 @@ button.front_button:hover {
     }
 }
 .section_poster {
-    display: block;
     padding-bottom: 90px;
-}
-h2 {
-    display: block;
 }
 .title_poster {
     text-align: center;
@@ -453,6 +448,12 @@ h2 {
     font-size: 48px;
     font-weight: 700;
     margin: 0 0 56px;
+}
+@media (max-width: 992px) {
+    .title_poster {
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
 }
 .event {
     display: flex;
@@ -470,7 +471,6 @@ h2 {
     box-shadow: 0 0 8px rgb(0 0 0 / 5%), 1px 1px 1px rgb(0 0 0 / 18%);
 }
 .event_date {
-    box-sizing: border-box;
     width: 20%;
     padding-right: 16px;
 }
@@ -486,9 +486,7 @@ h2 {
     line-height: 1.2;
 }
 .event_city {
-    box-sizing: border-box;
     width: 25%;
-    flex-grow: 1;
     padding: 0 16px;
     font-weight: 700;
     font-size: 24px;
@@ -496,7 +494,6 @@ h2 {
     text-align: center;
 }
 .event_place {
-    box-sizing: border-box;
     flex-grow: 1;
     padding: 0 16px;
     font-weight: 700;
@@ -504,6 +501,11 @@ h2 {
     line-height: 1.2;
     text-align: center;
     width: 25%;
+}
+@media (max-width: 1215px) {
+    .event_date .event_date__month, .event_date__time .event_city .event_place {
+        font-size: 16px;
+    }
 }
 .ticket_button {
     box-sizing: border-box;
@@ -512,8 +514,16 @@ h2 {
     text-align: end;
     padding-left: 16px;
 }
-.ticket_button:hover {
-    opacity: 0.8;
+@media (max-width: 1215px) {
+    .ticket_button {
+        width: auto;
+    }
+}
+@media (max-width: 1530px) {
+    .ticket_button {
+        font-size: 20px;
+        height: auto;
+    }
 }
 .button__all_events {
     display: block;
@@ -536,9 +546,18 @@ h2 {
 .button__all_events:hover {
     background-color: var(--primary);
 }
+@media (max-width: 992px) {
+        .ticket_button {
+            width: 50%;
+        }
+}
+@media (max-width: 992px) {
+    .button__all_events {
+        width: 50%;
+    }
+}
 .section_news,
 .about_tickets {
-    display: block;
     padding-bottom: 92px;
     border: none;
     background-color: var(--bg-color);
@@ -556,6 +575,12 @@ h2 {
 h2 .header_news {
     letter-spacing: -.01em;
 }
+@media (max-width: 992px) {
+    .header_news {
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+}
 .container_news {
     display: flex;
     flex-wrap: wrap;
@@ -567,16 +592,14 @@ h2 .header_news {
     flex-direction: column;
     padding: 0 16px 16px;
     width: 33.33%;
-    box-sizing: border-box;
 }
 .news_card {
     display: block;
     margin-bottom: 16px;
-    text-decoration: none;
     color: var(--content-color);
 }
-a .news_card {
-    cursor: pointer;
+a {
+    cursor: default;
 }
 .news_card__date {
     margin: 0 0 8px;
@@ -597,9 +620,11 @@ p {
 h3 .news_title {
     line-height: 1.2;
 }
-.news_title:hover {
-    color: var(--primary);
-    transition: .1s ease-out;
+@media (max-width: 992px) {
+    .news_title {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
 }
 .news_card__text {
     margin: 8px 0;
@@ -611,6 +636,12 @@ h3 .news_title {
 }
 h2 .tickets_title {
     letter-spacing: -.01em;
+}
+@media (max-width: 992px) {
+    .tickets_title {
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
 }
 .text_tickets {
     margin-top: 55px;
@@ -624,15 +655,20 @@ h3 {
     font-size: 24px;
     letter-spacing: -.01em;
 }
+@media (max-width: 992px) {
+    .text_tickets h3 {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+}
 .footer {
     position: relative;
     z-index: 1;
     margin-top: auto;
     padding: 40px 0 20px;
-    background-color: var(--secondary);
+    background-color: rgba(0, 0, 0, 0.89);
 }
 .footer_container {
-    box-sizing: border-box;
     z-index: 2;
     position: relative;
     margin: 0 auto;
@@ -661,15 +697,16 @@ li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
-.footer__menu_link {
+.footer__menu_link,
+.footer__menu_links {
     color: inherit;
     text-decoration: none;
     transition: .2s ease-in-out;
-    cursor: pointer;
 }
-.footer__menu_link:hover {
+.footer__menu_links:hover {
     color: #A40313FF;
     transition: .1s ease-out;
+    cursor: pointer;
 }
 .footer_border {
     width: 100%;
@@ -681,6 +718,12 @@ li {
     font-size: 16px;
     text-align: center;
     color: hsla(0,0%,100%,.6);
+}
+@media (max-width: 992px) {
+    .footer_menu .footer_border {
+        width: 50%;
+        margin-bottom: 30px;
+    }
 }
 
 
