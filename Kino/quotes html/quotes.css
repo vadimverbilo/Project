@@ -1,0 +1,313 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+:root {
+    --secondary: #000;
+    --primary: #cc162e;
+    --bg-color: #FAFAFA;
+    --content-color: rgba(0, 0, 0, 0.79);
+    --container-color: #fff;
+    --twisting: 10px;
+    --content-color30: #0000004d;
+    --content-color20: #00000033;
+    --secondary80: #333333FF;
+    --secondary40: #999999FF;
+    --primary4: #FDF6F7FF;
+}
+body {
+    font-family: PT Sans,sans-serif;
+    font-size: 16px;
+    color: var(--content-color);
+    height: 100%;
+}
+.header_quotes {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: .1s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.89);
+    color: #fff;
+    z-index: 10;
+    height: 105px;
+}
+.quotes_container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    padding: 20px 40px;
+    max-width: 1215px;
+    width: 100%;
+    z-index: 2;
+}
+.log {
+    font-size: 28px;
+    margin-right: 20px;
+    max-width: 992px;
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Alumni Sans", sans-serif;
+    border: none;
+}
+@media (max-width: 992px) {
+    .log {
+        padding: 5px 10px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+}
+.page_logo:before {
+    top: -7px;
+    background: linear-gradient(270deg, var(--primary), rgba(56,208,128,0));
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    border-radius: 3px;
+}
+.page_logo:after {
+    bottom: -7px;
+    background: linear-gradient(90deg, var(--primary), rgba(56,208,128,0));
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    border-radius: 3px;
+}
+.quotes_menu {
+    flex-grow: 1;
+    display: block;
+}
+.quotes_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.nav__menu_item {
+    padding: 12px 24px;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: inherit;
+    transition: .2s ease-out;
+    text-shadow: 0 0 8px rgb(0 0 0 / 5%), 1px 1px 1px rgb(0 0 0 / 16%);
+}
+.nav__menu_item:hover {
+    color: #A40313FF;
+    cursor: pointer;
+}
+@media (max-width: 992px) {
+    .nav__menu_item {
+        padding: 5px 10px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+}
+.quotes_main {
+    position: relative;
+    background-color: var(--bg-color);
+    flex-grow: 1;
+}
+.quotes_front {
+    min-height: 705px;
+    height: 60vh;
+}
+img {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.quotes_title {
+    position: relative;
+    z-index: 2;
+    padding: 72px 0;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 8px rgb(0 0 0 / 8%), 1px 1px 1px rgb(0 0 0 / 24%);
+    margin-top: 105px;
+}
+@media (max-width: 992px) {
+    .quotes_title {
+        padding: 65px 0;
+        font-size: 54px;
+    }
+}
+@media (max-width: 1215px) {
+    .quotes_title {
+        margin-top: 50px;
+    }
+}
+.quotes__content_container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1215px;
+    width: 100%;
+    z-index: 2;
+}
+.quotes_content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: -80px -40px 80px;
+    padding: 40px 40px 80px;
+    background-color: var(--container-color);
+    color: var(--content-color);
+    border-radius: var(--twisting);
+    box-shadow: 0 8px 64px rgb(0 0 0 / 4%);
+}
+.quotes__menu {
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+.quotes__list {
+    display: inline-block;
+    padding: 12px 0 12px 0;
+    font-size: 16px;
+}
+.quotes_item:not(:last-child) a {
+    color: var(--primary);
+}
+.quotes_item:last-child a {
+    color: var( --secondary);
+}
+.quotes_item {
+    position: relative;
+    display: inline;
+}
+a {
+    cursor: default;
+}
+@media (max-width: 992px) {
+    .quotes_item {
+        padding: 10px 0;
+    }
+}
+.quotes__content {
+    box-shadow: 0 0 8px rgb(0 0 0 / 5%), 1px 1px 1px rgb(0 0 0 / 18%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5px 5px;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+    border-radius: 5px;
+    border: 1px solid var(--secondary40);
+    margin: 24px 0 0 0;
+    background-color: var(--bg-color);
+}
+.content_item {
+    text-align: left;
+}
+.text {
+    text-shadow: 0 0 8px rgb(0 0 0 / 8%), 1px 1px 1px rgb(0 0 0 / 24%);
+}
+.sub_text {
+    font-size: small;
+}
+.footer {
+    position: relative;
+    z-index: 1;
+    margin-top: auto;
+    padding: 40px 0 20px;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+.footer_container {
+    z-index: 2;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1215px;
+    width: 100%;
+    color: #fff;
+}
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_menu {
+    padding: 0;
+    margin: 0 50px 40px;
+    list-style: none;
+    width: 100%;
+}
+.footer__menu_list:not(:last-child) {
+    margin-bottom: 16px;
+}
+li {
+    display: list-item;
+}
+.footer__menu_link,
+.footer__menu_links {
+    color: inherit;
+    text-decoration: none;
+    transition: .1s ease-in-out;
+}
+.footer__menu_links:hover {
+    color: #A40313FF;
+    transition: .1s ease-out;
+    cursor: pointer;
+}
+.footer__menu_link {
+    cursor: default;
+}
+.footer_border {
+    width: 100%;
+    height: 1px;
+    background-color: hsla(0,0%,100%,.2);
+    margin: 0 0 20px;
+}
+.footer_down {
+    font-size: 16px;
+    text-align: center;
+    color: hsla(0,0%,100%,.6);
+}
+@media (max-width: 992px) {
+    .footer {
+        padding: 20px 16px 16px;
+    }
+}
+@media (max-width: 992px) {
+    .footer_menu {
+        width: 50px;
+        margin-top: 30px;
+    }
+}
+
+
